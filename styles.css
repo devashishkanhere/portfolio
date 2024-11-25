@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #d1d1d1; /* Light gray text */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #2196f3, #00bcd4); /* Dark blue-teal gradient */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Slightly lighter for contrast */
+}
+
+/* Navigation */
+nav {
+    background: #1e1e1e; /* Darker navigation bar */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #00bcd4; /* Teal links */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2196f3; /* Bright blue on hover */
+}
+
+/* Sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00bcd4; /* Teal section titles */
+}
+
+/* About Section */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 4px solid #00bcd4; /* Teal border */
+}
+
+/* Education and Skills */
+.education-grid, .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.education-item, .skill {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #1e1e1e; /* Slightly lighter dark background */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover, .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 188, 212, 0.4); /* Teal shadow on hover */
+}
+
+.education-item h3, .skill h3 {
+    color: #00bcd4; /* Teal titles */
+}
+
+/* Projects */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #1e1e1e; /* Dark card background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(33, 150, 243, 0.4); /* Blue shadow on hover */
+}
+
+.project-card h3 {
+    color: #2196f3; /* Blue project titles */
+}
+
+/* Contact Section */
+a {
+    color: #00bcd4; /* Teal links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2196f3; /* Blue hover */
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e; /* Dark footer */
+    color: #d1d1d1;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
